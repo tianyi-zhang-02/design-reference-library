@@ -4,6 +4,8 @@
 
 A searchable reference catalog for designers and coding agents. The catalog records a source, an observable design choice, an adaptation, and a tradeoff for each entry.
 
+[在线浏览 · Live catalog](https://tianyi-zhang-02.github.io/design-reference-library/)
+
 ## 浏览目录
 
 从本目录启动任意静态 HTTP 服务器。例如：
