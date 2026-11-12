@@ -3,57 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="可按风格与用途搜索的设计案例库，记录参考来源、可借用的设计决策和取舍。">
+  <meta name="description" content="22 种设计风格、精选网页案例和可交互的模板与组件 Demo。">
+  <meta name="theme-color" content="#f8f7f3">
   <title>设计参考库 · Design Reference Library</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./demos.css">
   <script type="module" src="./app.mjs"></script>
 </head>
 <body>
-  <header class="masthead page-width">
-    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Design Reference Library</a>
-    <a class="data-link" href="./catalog.json">目录数据 <span aria-hidden="true">↗</span></a>
+  <a href="#catalog" class="skip-link" data-text="skip">跳到目录</a>
+  <header class="site-header">
+    <div class="wrap masthead">
+      <a class="wordmark" href="./">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span data-text="brand">设计参考库</span>
+      </a>
+      <nav class="header-links" aria-label="网站导航" data-label="navigation">
+        <a href="https://github.com/tianyi-zhang-02/design-reference-library">GitHub <span aria-hidden="true">↗</span></a>
+        <div class="language" role="group" aria-label="语言 / Language">
+          <button type="button" data-language="zh" aria-label="简体中文" aria-pressed="true">中文</button>
+          <button type="button" data-language="en" aria-label="English" aria-pressed="false" lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
   </header>
-  <main class="page-width">
-    <section class="intro" aria-labelledby="title">
-      <div>
-        <h1 id="title">设计参考库</h1>
-        <p>从布局、材质和动效找灵感。每个案例都记录可借用的做法，以及用到自己项目里的取舍。</p>
+
+  <main class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <h1 id="page-title" data-text="title">设计参考库</h1>
+        <p data-text="intro">从网页模板和组件里找灵感。点开短 Demo，看清布局、材质和动效，再决定哪些值得带进自己的设计。</p>
       </div>
-      <div class="swatches" aria-label="按常用风格浏览案例">
+      <div class="quick-styles" id="quick-styles" role="group" aria-label="按常用风格浏览" data-label="quickStyles" hidden>
         <button type="button" class="swatch" data-pick-style="bento-grid">
-          <span class="sample sample-bento" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span>Bento</span>
+          <span class="swatch-art swatch-grid" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>Bento Grid</span>
         </button>
         <button type="button" class="swatch" data-pick-style="glassmorphism">
-          <span class="sample sample-glass" aria-hidden="true"><i></i><i></i></span>
-          <span>Glass</span>
+          <span class="swatch-art swatch-glass" aria-hidden="true"><i></i><i></i></span>
+          <span>Glassmorphism</span>
         </button>
         <button type="button" class="swatch" data-pick-style="editorial-design">
-          <span class="sample sample-editorial" aria-hidden="true"><i>Aa</i><i></i><i></i></span>
+          <span class="swatch-art swatch-type" aria-hidden="true">Aa<i></i></span>
           <span>Editorial</span>
         </button>
       </div>
     </section>
 
-    <section id="catalog" aria-label="设计目录">
-      <div class="views" role="group" aria-label="目录视图">
-        <button type="button" data-view="references" aria-pressed="true">案例 <span id="reference-total"></span></button>
-        <button type="button" data-view="styles" aria-pressed="false">风格索引 <span id="style-total"></span></button>
+    <section id="catalog" aria-labelledby="catalog-title">
+      <h2 id="catalog-title" class="sr-only" data-text="catalog">设计目录</h2>
+      <div class="catalog-tabs" id="catalog-tabs" role="group" aria-label="目录视图" data-label="views" hidden></div>
+      <div class="toolbar" id="filters" hidden>
+        <div class="search-field" role="search" aria-label="搜索目录" data-label="search">
+          <span class="search-icon" aria-hidden="true"></span>
+          <label class="sr-only" for="query" data-text="search">搜索目录</label>
+          <input id="query" type="search" autocomplete="off" placeholder="搜索风格、案例或做法…" data-placeholder="placeholder">
+        </div>
+        <label class="filter-field" id="style-filter">
+          <span data-text="style">风格</span><select id="style"></select>
+        </label>
+        <label class="filter-field" id="group-filter" hidden>
+          <span data-text="group">分类</span><select id="group"></select>
+        </label>
       </div>
-      <form id="filters" class="filters" role="search" aria-label="筛选目录">
-        <label class="search">搜索<input id="query" type="search" placeholder="试试 Bento、玻璃、排版…" autocomplete="off"></label>
-        <label id="kind-field">类型<select id="kind"><option value="">全部类型</option></select></label>
-        <label id="style-field">风格<select id="style"><option value="">全部风格</option></select></label>
-        <label id="group-field" hidden>分类<select id="group"><option value="">全部分类</option></select></label>
-      </form>
       <p class="result-count" id="result-count" role="status">正在读取目录…</p>
       <div class="entries" id="entries"></div>
-      <noscript>打开 <a href="./catalog.json">目录数据</a>查看全部条目。</noscript>
+      <noscript>打开 <a href="./catalog.json">目录 JSON</a> 查看条目。 <a href="./catalog.json">Open the JSON catalog</a> to browse without JavaScript.</noscript>
     </section>
   </main>
-  <footer class="page-width footer">
+
+  <footer class="wrap footer">
     <span>Design Reference Library</span>
-    <span><a href="./CONTRIBUTING.md">贡献案例</a> <a href="./LICENSE">MIT License</a></span>
+    <div>
+      <a href="./catalog.json" data-text="data">目录 JSON</a>
+      <a href="https://github.com/tianyi-zhang-02/design-reference-library/blob/main/CONTRIBUTING.md" data-text="contribute">贡献案例</a>
+      <a href="https://github.com/tianyi-zhang-02/design-reference-library/blob/main/LICENSE">MIT</a>
+    </div>
   </footer>
+
+  <dialog id="demo-dialog" aria-labelledby="demo-title">
+    <div class="demo-header">
+      <div>
+        <p class="demo-kind" data-text="originalDemo">原创演示</p>
+        <h2 id="demo-title"></h2>
+      </div>
+      <button id="close-demo" type="button" class="close-button" aria-label="关闭演示" data-label="close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="demo-stage" id="demo-stage" aria-hidden="true"></div>
+    <div class="demo-caption" id="demo-caption" aria-live="polite"></div>
+    <div class="demo-controls">
+      <div id="demo-steps" class="demo-steps" role="group" aria-label="演示步骤" data-label="steps"></div>
+      <button type="button" id="demo-play" class="outline-button"></button>
+    </div>
+    <a id="demo-source" class="demo-source" data-text="source" target="_blank" rel="noopener noreferrer">查看原作 ↗</a>
+  </dialog>
 </body>
 </html>

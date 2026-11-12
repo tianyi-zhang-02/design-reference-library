@@ -6,7 +6,7 @@ A searchable reference catalog for designers and coding agents. The catalog reco
 
 ## 直接使用 · Quick start
 
-- [在线浏览 · Browse the catalog](https://tianyi-zhang-02.github.io/design-reference-library/) — 按关键词、案例类型或风格筛选，再打开原出处。
+- 在线浏览 [简体中文](https://tianyi-zhang-02.github.io/design-reference-library/?lang=zh) · [English](https://tianyi-zhang-02.github.io/design-reference-library/?lang=en)。按关键词、案例类型或风格筛选。模板与页面组件有可暂停、重播和逐步查看的原创短 Demo。 Each template and component includes an original, step-by-step demo and a link to its source.
 - [公开 JSON · Use the data](https://tianyi-zhang-02.github.io/design-reference-library/catalog.json) — 可下载，也可以把链接交给有网页访问权限的 Claude 或 Codex。
 
 给 Claude 或 Codex 的示例 · Example prompt
@@ -40,3 +40,5 @@ python3 -m http.server 8000 --bind 127.0.0.1
 欢迎提交来自其他平台、开源设计系统或独立网站的案例。按照 [贡献指南](CONTRIBUTING.md) 补充来源和观察，再运行 `node validate.mjs`。
 
 风格名以 [@talhaxcodes 的清单](https://www.instagram.com/p/DdMUB4kskYv/c/18175565122437415/) 为起点。项目代码和原创说明采用 [MIT License](LICENSE)。链接指向的第三方作品、品牌和素材适用各自的使用条款。
+
+Artefakt 演示中的 [虹彩外套](assets/spectral-jacket.webp) 由内置 ImageGen 生成，用来展示灯光与取景的变化。Prompt: “A single unbranded futuristic technical puffer jacket suspended upright on an invisible form, centered, entire jacket and sleeves visible with generous dark margins. Graphite ripstop with oily blue-violet and teal iridescence, sculptural silhouette, cool ultraviolet side light, refined studio product photography on an even near-black background.”
