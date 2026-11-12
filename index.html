@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="可按风格与用途搜索的设计案例库，记录参考来源、可借用的设计决策和取舍。">
+  <title>设计参考库 · Design Reference Library</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <header class="masthead page-width">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Design Reference Library</a>
+    <a class="data-link" href="./catalog.json">目录数据 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="page-width">
+    <section class="intro" aria-labelledby="title">
+      <div>
+        <h1 id="title">设计参考库</h1>
+        <p>从布局、材质和动效找灵感。每个案例都记录可借用的做法，以及用到自己项目里的取舍。</p>
+      </div>
+      <div class="swatches" aria-label="按常用风格浏览案例">
+        <button type="button" class="swatch" data-pick-style="bento-grid">
+          <span class="sample sample-bento" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>Bento</span>
+        </button>
+        <button type="button" class="swatch" data-pick-style="glassmorphism">
+          <span class="sample sample-glass" aria-hidden="true"><i></i><i></i></span>
+          <span>Glass</span>
+        </button>
+        <button type="button" class="swatch" data-pick-style="editorial-design">
+          <span class="sample sample-editorial" aria-hidden="true"><i>Aa</i><i></i><i></i></span>
+          <span>Editorial</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="catalog" aria-label="设计目录">
+      <div class="views" role="group" aria-label="目录视图">
+        <button type="button" data-view="references" aria-pressed="true">案例 <span id="reference-total"></span></button>
+        <button type="button" data-view="styles" aria-pressed="false">风格索引 <span id="style-total"></span></button>
+      </div>
+      <form id="filters" class="filters" role="search" aria-label="筛选目录">
+        <label class="search">搜索<input id="query" type="search" placeholder="试试 Bento、玻璃、排版…" autocomplete="off"></label>
+        <label id="kind-field">类型<select id="kind"><option value="">全部类型</option></select></label>
+        <label id="style-field">风格<select id="style"><option value="">全部风格</option></select></label>
+        <label id="group-field" hidden>分类<select id="group"><option value="">全部分类</option></select></label>
+      </form>
+      <p class="result-count" id="result-count" role="status">正在读取目录…</p>
+      <div class="entries" id="entries"></div>
+      <noscript>打开 <a href="./catalog.json">目录数据</a>查看全部条目。</noscript>
+    </section>
+  </main>
+  <footer class="page-width footer">
+    <span>Design Reference Library</span>
+    <span><a href="./CONTRIBUTING.md">贡献案例</a> <a href="./LICENSE">MIT License</a></span>
+  </footer>
+</body>
+</html>

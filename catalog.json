@@ -1,0 +1,383 @@
+{
+  "version": 1,
+  "styleSource": {
+    "title": "Design Styles You Should Know",
+    "publisher": "talhaxcodes",
+    "url": "https://www.instagram.com/p/DdMUB4kskYv/c/18175565122437415/"
+  },
+  "groups": [
+    {
+      "id": "layout",
+      "name": "结构与排版"
+    },
+    {
+      "id": "surface",
+      "name": "表面与深度"
+    },
+    {
+      "id": "digital",
+      "name": "数字复古与未来感"
+    },
+    {
+      "id": "narrative",
+      "name": "图像与品牌叙事"
+    }
+  ],
+  "kinds": [
+    {
+      "id": "template",
+      "name": "整页模板"
+    },
+    {
+      "id": "section",
+      "name": "页面区块"
+    },
+    {
+      "id": "tool",
+      "name": "视觉工具"
+    },
+    {
+      "id": "system",
+      "name": "设计规范"
+    }
+  ],
+  "styles": [
+    {
+      "id": "bento-grid",
+      "name": "Bento Grid",
+      "nameZh": "便当网格",
+      "group": "layout",
+      "cues": "不同尺寸的模块共享列线和间距，卡片大小表达优先级",
+      "use": "功能、数据或案例总览；移动端按阅读顺序排成单列"
+    },
+    {
+      "id": "swiss-design",
+      "name": "Swiss Design",
+      "nameZh": "瑞士设计",
+      "group": "layout",
+      "cues": "严格网格、无衬线字、左对齐、非对称但稳定的构图",
+      "use": "文档、案例索引、需要快速扫读的产品页"
+    },
+    {
+      "id": "editorial-design",
+      "name": "Editorial Design",
+      "nameZh": "编辑式设计",
+      "group": "layout",
+      "cues": "主标题、图注、正文列与全幅图交替，形成杂志式阅读节奏",
+      "use": "作品集、长文、案例叙事"
+    },
+    {
+      "id": "minimalism",
+      "name": "Minimalism",
+      "nameZh": "极简主义",
+      "group": "layout",
+      "cues": "克制的元素数量、清楚的层级与有节奏的留白",
+      "use": "专注于一个主要操作的首页或阅读界面"
+    },
+    {
+      "id": "maximalism",
+      "name": "Maximalism",
+      "nameZh": "极繁主义",
+      "group": "layout",
+      "cues": "高密度图案、强色和多种尺度，仍有主次焦点",
+      "use": "活动页、文化品牌、内容较少的宣传首屏"
+    },
+    {
+      "id": "luxury-typography",
+      "name": "Luxury Typography",
+      "nameZh": "奢华字体排版",
+      "group": "layout",
+      "cues": "对比鲜明的展示字体、精细的字距和充足留白",
+      "use": "精品品牌、项目标题、章节过渡；正文可用更易读的字体"
+    },
+    {
+      "id": "claymorphism",
+      "name": "Claymorphism",
+      "nameZh": "黏土拟态",
+      "group": "surface",
+      "cues": "饱满的圆角体积、柔光、内外阴影，像捏塑的物件",
+      "use": "插画、吉祥物、引导页；适合局部主视觉"
+    },
+    {
+      "id": "glassmorphism",
+      "name": "Glassmorphism",
+      "nameZh": "玻璃拟态",
+      "group": "surface",
+      "cues": "半透明表面、背景模糊、薄描边；后方内容提供深度",
+      "use": "首屏产品预览或浮层；确保不同背景下文字都清晰"
+    },
+    {
+      "id": "neumorphism",
+      "name": "Neumorphism",
+      "nameZh": "新拟态",
+      "group": "surface",
+      "cues": "近似同色的表面通过明暗双阴影显出凸起或凹陷",
+      "use": "仪表和少量装饰控件；用轮廓或文字区分状态"
+    },
+    {
+      "id": "neo-brutalism",
+      "name": "Neo-Brutalism",
+      "nameZh": "新粗野主义",
+      "group": "surface",
+      "cues": "粗轮廓、硬阴影、高对比色块和直白标题",
+      "use": "创作者工具、活动页、想让按钮和标签直接醒目的界面"
+    },
+    {
+      "id": "cybercore",
+      "name": "Cybercore",
+      "nameZh": "",
+      "group": "digital",
+      "cues": "早期网络界面、故障纹理、数码符号与荧光色",
+      "use": "数字文化项目、实验作品页"
+    },
+    {
+      "id": "cyberpunk",
+      "name": "Cyberpunk",
+      "nameZh": "赛博朋克",
+      "group": "digital",
+      "cues": "暗色空间、霓虹、工业材质和未来城市的叙事感",
+      "use": "游戏、科技品牌的首屏或概念展示"
+    },
+    {
+      "id": "y2k-aesthetic",
+      "name": "Y2K Aesthetic",
+      "nameZh": "千禧年美学",
+      "group": "digital",
+      "cues": "镀铬、半透明塑料、亮面和泡泡字",
+      "use": "时尚企划、音乐活动、互动专题"
+    },
+    {
+      "id": "pixel-art",
+      "name": "Pixel Art",
+      "nameZh": "像素艺术",
+      "group": "digital",
+      "cues": "明确的像素轮廓、有限色板与复古游戏图形",
+      "use": "图标、角色、游戏化引导或插画"
+    },
+    {
+      "id": "synthwave",
+      "name": "Synthwave",
+      "nameZh": "合成波",
+      "group": "digital",
+      "cues": "霓虹渐变、透视网格、日落剪影和八十年代科幻色调",
+      "use": "音乐、夜间活动、复古科幻宣传"
+    },
+    {
+      "id": "scrapbook",
+      "name": "Scrapbook",
+      "nameZh": "剪贴簿",
+      "group": "narrative",
+      "cues": "叠放照片、胶带、纸边与手写批注",
+      "use": "个人作品集、活动记录、品牌故事"
+    },
+    {
+      "id": "surrealism",
+      "name": "Surrealism",
+      "nameZh": "超现实主义",
+      "group": "narrative",
+      "cues": "不可能的空间、尺度错位、意外物件并置",
+      "use": "概念首图、展览宣传；用一幅强图建立叙事"
+    },
+    {
+      "id": "conceptual-sketch",
+      "name": "Conceptual Sketch",
+      "nameZh": "概念草图",
+      "group": "narrative",
+      "cues": "构造线、注记、手绘草图或分解示意",
+      "use": "项目过程、功能解释、工程或设计作品集"
+    },
+    {
+      "id": "ethereal",
+      "name": "Ethereal",
+      "nameZh": "空灵",
+      "group": "narrative",
+      "cues": "低饱和薄雾、轻透的光和宽松构图",
+      "use": "美妆、艺术、冥想产品的主视觉"
+    },
+    {
+      "id": "bohemian",
+      "name": "Bohemian",
+      "nameZh": "波西米亚",
+      "group": "narrative",
+      "cues": "手工图案、织物质地、温暖色调和有机形状",
+      "use": "手作、旅行、生活方式品牌"
+    },
+    {
+      "id": "victorian",
+      "name": "Victorian",
+      "nameZh": "维多利亚风格",
+      "group": "narrative",
+      "cues": "装饰边框、繁复花纹、复古衬线字与雕版质感",
+      "use": "历史专题、展览、复古品牌视觉"
+    },
+    {
+      "id": "wabi-sabi",
+      "name": "Wabi-Sabi",
+      "nameZh": "侘寂",
+      "group": "narrative",
+      "cues": "自然材质、不规则边缘、克制的色彩与留白",
+      "use": "建筑、手工艺、家具或强调材料的作品集"
+    }
+  ],
+  "references": [
+    {
+      "id": "process-bento",
+      "title": "Process Bento",
+      "publisher": "GetLayers",
+      "url": "https://www.getlayers.ai/layer/process-bento",
+      "kind": "section",
+      "styles": [
+        "bento-grid"
+      ],
+      "observe": "在深色网格中，用一张钴蓝色引导卡和若干步骤卡展开流程。",
+      "adapt": "让第一张卡解释流程的结果，后续卡片各讲一个阶段。卡片大小跟着内容优先级走。",
+      "tradeoff": "步骤有先后依赖时保留编号和阅读顺序，窄屏按顺序堆叠。"
+    },
+    {
+      "id": "headline-gallery",
+      "title": "Headline Gallery",
+      "publisher": "GetLayers",
+      "url": "https://www.getlayers.ai/layer/headline-gallery",
+      "kind": "section",
+      "styles": [
+        "editorial-design",
+        "scrapbook"
+      ],
+      "observe": "大号钴蓝标题的字间穿插倾斜照片，下方接一条缓慢移动的图像带。",
+      "adapt": "把照片当作标题中的停顿。用同一段标题文本保持连续阅读，把作品说明放进图注。",
+      "tradeoff": "手机上将图像移到标题下方，避免图片挤断词或改变句子的阅读顺序。"
+    },
+    {
+      "id": "relay",
+      "title": "Relay",
+      "publisher": "GetLayers",
+      "url": "https://www.getlayers.ai/layer/relay",
+      "kind": "template",
+      "styles": [
+        "glassmorphism"
+      ],
+      "observe": "黑底和青柠色贯穿整页，首屏倾斜的玻璃窗口中演示退款工作流。",
+      "adapt": "让玻璃层承载一个真实的产品流程，用同一个强调色把流程节点与后续区块连起来。",
+      "tradeoff": "将静态流程作为基础内容。低对比度背景和倾斜透视都可能让小字难读。"
+    },
+    {
+      "id": "bento-proof-grid",
+      "title": "Bento Proof Grid",
+      "publisher": "GetLayers",
+      "url": "https://www.getlayers.ai/layer/bento-proof-grid",
+      "kind": "section",
+      "styles": [
+        "bento-grid"
+      ],
+      "observe": "海军蓝网格并置亮黄色数字卡、图标卡和照片轮播。",
+      "adapt": "按证据的分量分配卡片尺寸。把最能支撑卖点的事实和它的上下文放进同一张卡。",
+      "tradeoff": "轮播如果隐藏关键证据，额外提供可直接看到的核心数据或文字。"
+    },
+    {
+      "id": "blueprint-tabs",
+      "title": "Blueprint Tabs",
+      "publisher": "GetLayers",
+      "url": "https://www.getlayers.ai/layer/blueprint-tabs",
+      "kind": "section",
+      "styles": [
+        "conceptual-sketch"
+      ],
+      "observe": "切换功能标签时，蓝图重新绘制，并在旁边更新说明。",
+      "adapt": "复用同一张图的坐标和参照物，每个标签只强调一个变化，让解释能和图对上。",
+      "tradeoff": "关键变化要有文字。标签切换需要明确焦点和选中状态。"
+    },
+    {
+      "id": "kai-nomura",
+      "title": "Kai Nomura",
+      "publisher": "GetLayers",
+      "url": "https://www.getlayers.ai/layer/artist",
+      "kind": "template",
+      "styles": [
+        "minimalism"
+      ],
+      "observe": "单色作品集用留白衬托随滚动出现的生成艺术作品。",
+      "adapt": "用紧凑的页头和固定的图注格式，把首屏和项目列表的主要面积留给作品。",
+      "tradeoff": "对不同长宽比的作品保留一致的图注锚点，并给滚动效果提供静态呈现。"
+    },
+    {
+      "id": "artefakt",
+      "title": "Artefakt",
+      "publisher": "GetLayers",
+      "url": "https://www.getlayers.ai/layer/artefakt",
+      "kind": "template",
+      "styles": [
+        "cyberpunk",
+        "cybercore"
+      ],
+      "observe": "近黑色的网格会在指针下亮起，虹彩外套随滚动和指针变化，文字像从噪点中解码。",
+      "adapt": "让同一个商品贯穿页面，随内容推进切换观察角度。把网格和解码效果限制在展示区域。",
+      "tradeoff": "触屏和关闭动效时需要静态角度，价格、尺寸和操作一直保持可读。"
+    },
+    {
+      "id": "refract",
+      "title": "Refract",
+      "publisher": "GetLayers",
+      "url": "https://www.getlayers.ai/tools/refract",
+      "kind": "tool",
+      "styles": [
+        "glassmorphism"
+      ],
+      "observe": "工具用条纹、磨砂等玻璃材质折射输入图像，可调效果。",
+      "adapt": "先用一张主图试折射，再把选定的材质应用到小块装饰背景或展示边缘。",
+      "tradeoff": "折射会干扰文字阅读。正文和按钮放在对比度稳定的表面上。"
+    },
+    {
+      "id": "dither-art",
+      "title": "Dither Art",
+      "publisher": "GetLayers",
+      "url": "https://www.getlayers.ai/tools/dither-art",
+      "kind": "tool",
+      "styles": [
+        "pixel-art",
+        "cybercore"
+      ],
+      "observe": "在画布上组合有限色板、网点与终端感纹理，可以调整生成效果。",
+      "adapt": "给一张主图或过渡区添加有限色板的点阵。让点阵的尺度与页面中的图标尺度协调。",
+      "tradeoff": "控制纹理的覆盖面积和强度，小屏或低动效模式下优先用静帧。"
+    },
+    {
+      "id": "carbon-grid",
+      "title": "Carbon 2x Grid",
+      "publisher": "IBM Carbon",
+      "url": "https://www.carbondesignsystem.com/building-blocks/foundations/2x-grid/overview",
+      "kind": "system",
+      "styles": [
+        "swiss-design",
+        "bento-grid"
+      ],
+      "observe": "用同一基础单位安排列、盒子和边距，并为内容提供流式、固定和混合网格。",
+      "adapt": "让标题、卡片和图表对齐到同一组列线。按内容类型决定模块的尺寸随视口变化还是到点换列。",
+      "tradeoff": "列数和间距要跟着实际内容密度测，尤其检查宽表格和窄屏卡片。"
+    },
+    {
+      "id": "govuk-type-scale",
+      "title": "GOV.UK Type scale",
+      "publisher": "GOV.UK Design System",
+      "url": "https://design-system.service.gov.uk/styles/type-scale/",
+      "kind": "system",
+      "styles": [
+        "editorial-design",
+        "minimalism"
+      ],
+      "observe": "标题和正文共用一组字号与行高角色，并定义大小屏各自的排版比例。",
+      "adapt": "给标题、引言、正文和图注指定可复用的字号与行高。优先保住移动端正文的易读性。",
+      "tradeoff": "不同语言与字体的实际宽度有差异，用真实标题和正文验证行长与换行。"
+    },
+    {
+      "id": "reduced-motion",
+      "title": "Reduced motion",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/prefers-reduced-motion",
+      "kind": "system",
+      "styles": [],
+      "observe": "通过系统的减少动态效果偏好切换界面动效。",
+      "adapt": "为滚动叙事、视差或自动播放准备能表达同样内容的静态版。保留必要的操作反馈。",
+      "tradeoff": "停掉装饰动画时也要检查内容是否完整显示，操作后的状态是否清楚。"
+    }
+  ]
+}
